@@ -30,11 +30,11 @@
             margin-top: 20px;
             white-space: pre-line;
             font-size: 18px;
-            line-height: 1.4;
+            line-height: 1.4; /* Reduced line-height for closer spacing */
             text-align: left;
         }
         .category-feedback {
-            margin-bottom: 15px;
+            margin-bottom: 15px; /* Reduced margin between categories */
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
@@ -46,14 +46,23 @@
         }
         .category-feedback p {
             font-size: 16px;
-            margin: 5px 0;
+            margin: 5px 0; /* Reduced margin between text */
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Input Scores and Get Results</h1>
-        
+
+        <!-- Instructions for the Visual Exercise -->
+        <p>
+            This interactive tool is designed to help you assess the alignment between your current self and your ideal, vision-driven self. 
+            By completing this exercise, you’ll gain a clear, visual overview of where you're aligned and where you may need to focus your energy for improvement.
+        </p>
+        <p>
+            For each area, assign a score from 1 to 10, with 1 representing complete misalignment and 10 representing full alignment.
+        </p>
+
         <!-- Input fields for scores -->
         <input type="number" id="score1" placeholder="Personal Relationships (1-10)" min="1" max="10" />
         <input type="number" id="score2" placeholder="Professional Development (1-10)" min="1" max="10" />
@@ -72,7 +81,7 @@
         <div id="resultText"></div>
     </div>
 
-    <!-- JavaScript -->
+    <!-- Inline JavaScript -->
     <script>
         // Feedback data (Life Area, Alignment Level, Feedback & Recommendations)
         const feedbackData = [
