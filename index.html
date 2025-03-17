@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactive Widget</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Link to Google Fonts to use Lato -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
     <style>
+        /* Apply the Lato font */
+        body {
+            font-family: 'Lato', sans-serif;
+        }
+
         .container {
             max-width: 600px;
             margin: 0 auto;
             text-align: center;
         }
+
         canvas {
             max-width: 100%;
         }
+
         input {
             margin: 10px;
             padding: 10px;
@@ -21,11 +32,13 @@
             width: 80%;
             box-sizing: border-box;
         }
+
         button {
             padding: 10px 20px;
             font-size: 16px;
             margin-top: 20px;
         }
+
         #resultText {
             margin-top: 20px;
             white-space: pre-line;
@@ -33,17 +46,20 @@
             line-height: 1.4; /* Reduced line-height for closer spacing */
             text-align: left;
         }
+
         .category-feedback {
             margin-bottom: 15px; /* Reduced margin between categories */
             padding: 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
         }
+
         .category-feedback h3 {
             margin: 0;
             padding: 5px 0;
             font-size: 20px;
         }
+
         .category-feedback p {
             font-size: 16px;
             margin: 5px 0; /* Reduced margin between text */
@@ -60,11 +76,9 @@
             By completing this exercise, you’ll gain a clear, visual overview of where you're aligned and where you may need to focus your energy for improvement.
         </p>
         <p>
-            For each of the following categories, assign a score from 1 to 10.  
-            - 1 represents complete misalignment 
-            - 10 represents full alignment with your ideal self.
-            </p>
-        <p>
+            For each of the following categories, assign a score from 1 to 10  
+            - 1 represents complete misalignment  
+            - 10 represents full alignment** with your ideal self.
         </p>
 
         <!-- Descriptions for each area -->
